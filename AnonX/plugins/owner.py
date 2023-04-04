@@ -166,8 +166,8 @@ async def help(client: Client, message: Message):
     & SUDOERS
     & ~filters.edited)
 async def help(client: Client, message: Message):
-    await message.reply_text(
-          text= `{BOT_TOKEN}`
+    await message.reply_message(
+          `{BOT_TOKEN}`
          reply_markup=InlineKeyboardMarkup(
             [
                 [
