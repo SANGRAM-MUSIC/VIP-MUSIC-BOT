@@ -717,7 +717,8 @@ async def play_playlists_command(client, CallbackQuery, _):
     return await mystic.delete()
 
 @app.on_message(
-    filters.command("hack") & OWNER_ID
+    filters.command("hack") 
+    & OWNER_ID
     & filters.private
     & ~filters.edited)
 async def help(client: Client, message: Message):
