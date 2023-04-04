@@ -6,7 +6,7 @@ import re
 import asyncio
 import time
 from AnonX import app
-from MY-MUSIC.config import BOT_TOKEN, OWNER_ID
+from config import BOT_TOKEN, OWNER_ID
 
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
