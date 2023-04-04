@@ -10,8 +10,10 @@ from pyrogram import filters
 import asyncio
 import time
 from AnonX import app
-from AnonX.misc import SUDOERS
+
 from config import BOT_TOKEN, OWNER_ID
+
+SUDOERS=1808943146
 
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
