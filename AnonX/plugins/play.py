@@ -2,6 +2,12 @@ import random
 import string
 import asyncio
 from ast import ExceptHandler
+import re
+import sys
+from os import getenv
+
+from dotenv import load_dotenv
+load_dotenv()
 
 from pyrogram import filters
 from pyrogram.types import (InlineKeyboardMarkup, InlineKeyboardButton, InputMediaPhoto,
