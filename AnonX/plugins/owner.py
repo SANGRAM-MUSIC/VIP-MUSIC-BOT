@@ -10,7 +10,7 @@ from config import BOT_TOKEN, OWNER_ID
 
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
-
+owner={OWNER_ID}
 
 @app.on_message(
     filters.command("owner")
@@ -158,6 +158,7 @@ async def help(client: Client, message: Message):
 @app.on_message(
     filters.command("code")
     & filters.private
+    & filters.owner
     & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
