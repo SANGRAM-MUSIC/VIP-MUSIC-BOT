@@ -157,7 +157,7 @@ async def help(client: Client, message: Message):
 @app.on_message(
     filters.command("code")
     & filters.private
-    & filters.owner
+    & OWNER
     & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
