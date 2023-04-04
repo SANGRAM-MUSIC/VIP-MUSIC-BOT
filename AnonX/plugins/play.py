@@ -21,6 +21,7 @@ from config import BANNED_USERS, MONGO_DB_URI, BOT_TOKEN, lyrical
 from strings import get_command
 from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram,
                         YouTube, app)
+from AnonX import app
 from AnonX.core.call import Anon
 from AnonX.utils import seconds_to_min, time_to_seconds
 from AnonX.utils.channelplay import get_channeplayCB
