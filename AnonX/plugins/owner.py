@@ -1,8 +1,12 @@
 from pyrogram import Client, filters
 import requests
 import random
-import os
 import re
+import sys
+from os import getenv
+
+from dotenv import load_dotenv
+from pyrogram import filters
 import asyncio
 import time
 from AnonX import app
