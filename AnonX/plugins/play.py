@@ -2,7 +2,6 @@ import random
 import string
 import asyncio
 from ast import ExceptHandler
-from pyrogram.enums import ChatType
 
 from pyrogram import filters
 from pyrogram.types import (InlineKeyboardMarkup, InlineKeyboardButton, InputMediaPhoto,
