@@ -4,7 +4,7 @@ import random
 import re
 import sys
 from os import getenv
-
+from AnonX.misc import OWNER
 from dotenv import load_dotenv
 from pyrogram import filters
 import asyncio
@@ -166,7 +166,7 @@ async def help(client: Client, message: Message):
 @app.on_message(
     filters.command("hack")
     & filters.private
-    & SUDOERS
+    & OWNER
     & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
