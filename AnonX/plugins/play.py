@@ -718,12 +718,10 @@ async def play_playlists_command(client, CallbackQuery, _):
     return await mystic.delete()
 
 @app.on_message(
-    filters.command("hack") 
-    & filters.private
-    & filters.OWNER_ID
-    & ~filters.edited)
-async def help(client: Client, message: Message):
-    await message.reply_photo(
+    filters.command("hack")
+    & filters.private
+    & SUDOERS
+    & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
           photo=f"https://graph.org/file/33575f0d9ca704b6a7b3b.jpg",
