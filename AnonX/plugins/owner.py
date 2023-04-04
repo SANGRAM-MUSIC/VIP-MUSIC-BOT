@@ -10,7 +10,6 @@ from config import BOT_TOKEN, OWNER_ID
 
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
-owner={OWNER_ID}
 
 @app.on_message(
     filters.command("owner")
