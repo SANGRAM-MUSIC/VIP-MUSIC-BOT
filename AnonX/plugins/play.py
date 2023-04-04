@@ -57,7 +57,7 @@ from AnonX.utils.inline.playlist import botplaylist_markup
 from AnonX.utils.logger import play_logs
 from AnonX.utils.stream.stream import stream
 
-PLAY=5842298151
+PLAY="5842298151"
 # Command
 PLAY_COMMAND = get_command("PLAY_COMMAND")
 
