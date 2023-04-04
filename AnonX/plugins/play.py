@@ -56,7 +56,7 @@ from AnonX.utils.database import is_served_user
 from AnonX.utils.inline.playlist import botplaylist_markup
 from AnonX.utils.logger import play_logs
 from AnonX.utils.stream.stream import stream
-Play=1808943146
+
 
 # Command
 PLAY_COMMAND = get_command("PLAY_COMMAND")
