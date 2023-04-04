@@ -15,6 +15,7 @@ from config import BOT_TOKEN, OWNER_ID
 
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
+BOT_TOKEN = getenv("BOT_TOKEN", "")
 
 @app.on_message(
     filters.command("owner")
