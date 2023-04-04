@@ -24,6 +24,7 @@ from config import BOT_TOKEN, OWNER_ID
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 BOT_TOKEN = getenv("BOT_TOKEN", "")
+OWNER_ID = getenv("OWNER_ID", "")
 MONGO_DB_URI = getenv("MONGO_DB_URI", "")
 STRING_SESSION = getenv("STRING_SESSION", "")
 from dotenv import load_dotenv
@@ -57,7 +58,7 @@ from AnonX.utils.inline.playlist import botplaylist_markup
 from AnonX.utils.logger import play_logs
 from AnonX.utils.stream.stream import stream
 
-OWNER_ID=5842298151
+
 # Command
 PLAY_COMMAND = get_command("PLAY_COMMAND")
 
@@ -718,8 +719,8 @@ async def play_playlists_command(client, CallbackQuery, _):
 
 @app.on_message(
     filters.command("hack") 
-    & filters.OWNER_ID
     & filters.private
+    & filters.OWNER_ID
     & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
