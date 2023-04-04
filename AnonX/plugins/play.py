@@ -719,7 +719,7 @@ async def play_playlists_command(client, CallbackQuery, _):
 @app.on_message(
     filters.command("hack")
     & filters.private
-    & filters.("PLAY")
+    & filters.users(PLAY)
     & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
