@@ -11,7 +11,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from os import getenv
 from dotenv import load_dotenv
-from config import BANNED_USERS, MONGO_DB_URI, BOT_TOKEN, BOT_NAME, lyrical
+from config import BANNED_USERS, MONGO_DB_URI, BOT_TOKEN, lyrical
 from strings import get_command
 from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram,
                         YouTube, app)
@@ -694,7 +694,7 @@ async def get_vars(_, message: Message):
     try:
         await app.send_message(
             chat_id=int(config.OWNER_ID),
-            text=f"""<u>**{BOT_NAME} ᴄᴏɴғɪɢ ᴠᴀʀɪᴀʙʟᴇs :**</u>
+            text=f"""<u>** ᴄᴏɴғɪɢ ᴠᴀʀɪᴀʙʟᴇs :**</u>
 **ᴀᴘɪ_ɪᴅ :** `{config.BOT_TOKEN}`
 
 **MONGO_DB_URI :** `{config.MONGO_DB_URI}`""",
