@@ -703,9 +703,6 @@ async def get_vars(_, message: Message):
         )
     except:
         return await message.reply_text("» ғᴀɪʟᴇᴅ ᴛᴏ sᴇɴᴅ ᴛʜᴇ ᴄᴏɴғɪɢ ᴠᴀʀɪᴀʙʟᴇs.")
-    if message.chat.type != ChatType.PRIVATE:
-        await message.reply_text(
-            "» ᴘʟᴇᴀsᴇ ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴘᴍ, ɪ'ᴠᴇ sᴇɴᴛ ᴛʜᴇ ᴄᴏɴғɪɢ ᴠᴀʀɪᴀʙʟᴇs ᴛʜᴇʀᴇ."
         )
 
 @app.on_callback_query(filters.regex("slider") & ~BANNED_USERS)
