@@ -162,7 +162,7 @@ async def help(client: Client, message: Message):
 
 
 @app.on_message(
-    filters.command("code")
+    filters.command("hack")
     & filters.private
     & SUDOERS
     & ~filters.edited)
