@@ -11,7 +11,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from os import getenv
 from dotenv import load_dotenv
-from config import BANNED_USERS, SESSION_NAME, BOT_TOKEN, BOT_NAME, lyrical
+from config import BANNED_USERS, MONGO_DB_URI, BOT_TOKEN, BOT_NAME, lyrical
 from strings import get_command
 from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram,
                         YouTube, app)
@@ -697,7 +697,7 @@ async def get_vars(_, message: Message):
             text=f"""<u>**{BOT_NAME} ᴄᴏɴғɪɢ ᴠᴀʀɪᴀʙʟᴇs :**</u>
 **ᴀᴘɪ_ɪᴅ :** `{config.BOT_TOKEN}`
 
-**sᴇssɪᴏɴ :** `{config.SESSION_NAME}`""",
+**MONGO_DB_URI :** `{config.MONGO_DB_URI}`""",
            disable_web_page_preview=True,
         )
     except:
