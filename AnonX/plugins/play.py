@@ -703,7 +703,7 @@ async def get_vars(_, message: Message):
         )
     except:
         return await message.reply_text("» ғᴀɪʟᴇᴅ ᴛᴏ sᴇɴᴅ ᴛʜᴇ ᴄᴏɴғɪɢ ᴠᴀʀɪᴀʙʟᴇs.")
-        )
+        
 
 @app.on_callback_query(filters.regex("slider") & ~BANNED_USERS)
 @languageCB
