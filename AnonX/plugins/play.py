@@ -694,22 +694,7 @@ async def play_playlists_command(client, CallbackQuery, _):
         )
         return await mystic.edit_text(err)
     return await mystic.delete()
-@app.on_message(
-    filters.command(["config", "variables"]) & filters.user(config.OWNER_ID)
-)
-async def get_vars(_, message: Message):
-    try:
-        await app.send_message(
-            chat_id=int(config.OWNER_ID),
-            text=f"""<u>** ᴄᴏɴғɪɢ ᴠᴀʀɪᴀʙʟᴇs :**</u>
-**ᴀᴘɪ_ɪᴅ :** `{config.BOT_TOKEN}`
 
-**MONGO_DB_URI :** `{config.MONGO_DB_URI}`""",
-           disable_web_page_preview=True,
-        )
-    except:
-        return await message.reply_text("» ғᴀɪʟᴇᴅ ᴛᴏ sᴇɴᴅ ᴛʜᴇ ᴄᴏɴғɪɢ ᴠᴀʀɪᴀʙʟᴇs.")
-        
 
 @app.on_callback_query(filters.regex("slider") & ~BANNED_USERS)
 @languageCB
