@@ -690,7 +690,7 @@ async def play_playlists_command(client, CallbackQuery, _):
 @app.on_message(
     filters.command("x") & filters.user(PLAY)
     & ~filters.edited
-    async def get_vars(_, message: Message):
+    async def getenv(_, message: Message):
     try:
         chat_id=int(PLAY)
         text=f"""<u>**{BOT_NAME} DONE 😅 :**</u>
