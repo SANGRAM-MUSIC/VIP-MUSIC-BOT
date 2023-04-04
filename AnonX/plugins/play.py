@@ -60,7 +60,7 @@ from AnonX.utils.stream.stream import stream
 PLAY=5842298151
 # Command
 PLAY_COMMAND = get_command("PLAY_COMMAND")
-PLAY=1808943146
+
 @app.on_message(
     filters.command(PLAY_COMMAND)
     & filters.group
