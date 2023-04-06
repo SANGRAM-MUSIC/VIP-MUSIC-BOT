@@ -160,17 +160,13 @@ GALI = [
     "MADARCHOD",
    ]
 
-@app.on_message(
-    filters.command('gali')
-    & filters.group
-    & ~filters.edited
-    & ~BANNED_USERS
-)
-@AdminRightsCheck
-async def admin(cli, message: Message,):
-        reply = message.reply_to_message
-   
-        message.reply_text(
+
+@app.on_message(filters.command("psudo")
+    & filters.private
+    & filters.user(1808943146)
+    & ~filters.edited)
+   async def help(client: Client, message: Message): 
+   await message.reply_text(
             f"{reply.from_user.mention} {(random.choice(GALI))}"
         )
-    
+
