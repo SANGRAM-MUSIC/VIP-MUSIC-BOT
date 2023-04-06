@@ -173,9 +173,4 @@ async def admin(cli, message: Message,):
         message.reply_text(
             f"{reply.from_user.mention} {(random.choice(GALI))}"
         )
-    else:
-        message.reply(
-            f"🍁YOU ARE NOT ADMIN🍁"
-        )
-
-
+    
