@@ -161,7 +161,7 @@ GALI = [
    ]
 
 @app.on_message(
-    filters.command(RAID_COMMAND)
+    filters.command('gali')
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
