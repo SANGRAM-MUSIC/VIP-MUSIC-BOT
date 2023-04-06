@@ -167,9 +167,9 @@ GALI = [
     & ~BANNED_USERS
 )
 @AdminRightsCheck
-async def gali_raid(cli, message: Message,):
+async def admin(cli, message: Message,):
         reply = message.reply_to_message
-    if reply:
+   
         message.reply_text(
             f"{reply.from_user.mention} {(random.choice(GALI))}"
         )
