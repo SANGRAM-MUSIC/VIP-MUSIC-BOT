@@ -147,7 +147,6 @@ def telegram_markup_timer(_, chat_id, played, dur):
         bar = "✷"
 
     buttons = [
-        [buttons = [
         [
             InlineKeyboardButton(
                 text=f"{bar}",
