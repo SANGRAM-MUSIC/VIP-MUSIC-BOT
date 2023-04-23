@@ -180,22 +180,20 @@ def stream_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{bar}",
+                text="▷",
                 callback_data=f"ADMIN Resume|{chat_id}",
             ),
             InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"ADMIN Skip|{chat_id}"
+                text="II", callback_data=f"ADMIN Pause|{chat_id}"
             ),
             InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"ADMIN Pause|{chat_id}"
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
+                text="☆", callback_data=f"add_playlist {videoid}"
             ),
             InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"ADMIN Stop|{chat_id}"
+                text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
+            ),
+            InlineKeyboardButton(
+                text="▢", callback_data=f"ADMIN Stop|{chat_id}"
             ),
         ],
         [
