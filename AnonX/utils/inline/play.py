@@ -135,13 +135,13 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         
         [
             InlineKeyboardButton(
-                text="✫ˢᵏⁱᵖ✫", callback_data=f"ADMIN Skip|{chat_id}"
+                text="𝘀ҡเp", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="✰ˢᵗᵒᵖ✰", callback_data=f"ADMIN Stop|{chat_id}"
+                text="𝘀τσρ", callback_data=f"ADMIN Stop|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="✯𝙲𝙻𝙾𝚂𝙴✯", callback_data=f"close"
+                text="𝗰ℓσѕε", callback_data=f"close"
             )
         ],
     ]
@@ -275,13 +275,13 @@ def telegram_markup_timer(_, chat_id, played, dur):
         
         [
             InlineKeyboardButton(
-                text="✫ˢᵏⁱᵖ✫", callback_data=f"ADMIN Skip|{chat_id}"
+                text="𝘀ҡเp", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="✰ˢᵗᵒᵖ✰", callback_data=f"ADMIN Stop|{chat_id}"
+                text="𝘀τσρ", callback_data=f"ADMIN Stop|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="✯𝙲𝙻𝙾𝚂𝙴✯", callback_data=f"close"
+                text="𝗰ℓσѕε", callback_data=f"close"
             )
         ],
     ]
