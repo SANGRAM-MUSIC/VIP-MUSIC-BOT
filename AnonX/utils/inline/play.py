@@ -85,31 +85,40 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
             InlineKeyboardButton(
                 text=f"{bar}", callback_data=f"add_playlist {videoid}"
             ),
-        ],
-        [
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
             InlineKeyboardButton(
                 text=f"{bar}", callback_data=f"add_playlist {videoid}"
             ),
         ],
         [
+            InlineKeyboardButton(
+                text=f"{bar}", callback_data=f"add_playlist {videoid}"
+            ),
+            InlineKeyboardButton(
+                text=f"{bar}", callback_data=f"add_playlist {videoid}"
+            ),
+            InlineKeyboardButton(
+                text=f"{bar}", callback_data=f"add_playlist {videoid}"
+            ),
+            InlineKeyboardButton(
+                text=f"{bar}", callback_data=f"add_playlist {videoid}"
+            ),
+            InlineKeyboardButton(
+                text=f"{bar}", callback_data=f"add_playlist {videoid}"
+            ),
+            InlineKeyboardButton(
+                text=f"{bar}", callback_data=f"add_playlist {videoid}"
+            ),
+            InlineKeyboardButton(
+                text=f"{bar}", callback_data=f"add_playlist {videoid}"
+            ),
+            InlineKeyboardButton(
+                text=f"{bar}", callback_data=f"add_playlist {videoid}"
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text=f"{bar}", callback_data=f"add_playlist {videoid}"
+            ),
             InlineKeyboardButton(
                 text=f"{bar}", callback_data=f"add_playlist {videoid}"
             ),
@@ -225,31 +234,40 @@ def telegram_markup_timer(_, chat_id, played, dur):
             InlineKeyboardButton(
                 text=f"{bar}", callback_data=f"add_playlist {videoid}"
             ),
-        ],
-        [
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
             InlineKeyboardButton(
                 text=f"{bar}", callback_data=f"add_playlist {videoid}"
             ),
         ],
         [
+            InlineKeyboardButton(
+                text=f"{bar}", callback_data=f"add_playlist {videoid}"
+            ),
+            InlineKeyboardButton(
+                text=f"{bar}", callback_data=f"add_playlist {videoid}"
+            ),
+            InlineKeyboardButton(
+                text=f"{bar}", callback_data=f"add_playlist {videoid}"
+            ),
+            InlineKeyboardButton(
+                text=f"{bar}", callback_data=f"add_playlist {videoid}"
+            ),
+            InlineKeyboardButton(
+                text=f"{bar}", callback_data=f"add_playlist {videoid}"
+            ),
+            InlineKeyboardButton(
+                text=f"{bar}", callback_data=f"add_playlist {videoid}"
+            ),
+            InlineKeyboardButton(
+                text=f"{bar}", callback_data=f"add_playlist {videoid}"
+            ),
+            InlineKeyboardButton(
+                text=f"{bar}", callback_data=f"add_playlist {videoid}"
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text=f"{bar}", callback_data=f"add_playlist {videoid}"
+            ),
             InlineKeyboardButton(
                 text=f"{bar}", callback_data=f"add_playlist {videoid}"
             ),
