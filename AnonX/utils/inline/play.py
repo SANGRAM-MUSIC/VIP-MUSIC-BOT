@@ -13,31 +13,59 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     duration_sec = time_to_seconds(dur)
     percentage = (played_sec / duration_sec) * 100
     anon = math.floor(percentage)
-    if 0 < anon <= 10:
-        bar = "◉—————————"
-    elif 10 < anon < 20:
-        bar = "—◉————————"
-    elif 20 <= anon < 30:
-        bar = "——◉———————"
-    elif 30 <= anon < 40:
-        bar = "———◉——————"
-    elif 40 <= anon < 50:
-        bar = "————◉—————"
-    elif 50 <= anon < 60:
-        bar = "—————◉————"
-    elif 60 <= anon < 70:
-        bar = "——————◉———"
-    elif 70 <= anon < 80:
-        bar = "———————◉——"
-    elif 80 <= anon < 95:
-        bar = "————————◉—"
+    if 0 < anon <= 5:
+        bar = "✯"
+    elif 5 < anon < 10:
+        bar = "☆"
+    elif 10 <= anon < 15:
+        bar = "✷"
+    elif 15 <= anon < 20:
+        bar = "✪"
+    elif 20 <= anon < 25:
+        bar = "✯"
+    elif 25 <= anon < 30:
+        bar = "☆"
+    elif 30 <= anon < 35:
+        bar = "✯"
+    elif 35 <= anon < 40:
+        bar = "✷"
+    elif 40 <= anon < 45:
+        bar = "✪"
+    elif 45 < anon < 50:
+        bar = "✯"
+    elif 50 <= anon < 55:
+        bar = "✷"
+    elif 55 <= anon < 60:
+        bar = "✪"
+    elif 60 <= anon < 65:
+        bar = "☆"
+    elif 65 <= anon < 70:
+        bar = "✯"
+    elif 70 <= anon < 75:
+        bar = "✷"
+    elif 75 <= anon < 80:
+        bar = "✪"
+    elif 80 <= anon < 85:
+        bar = "☆"
+    elif 85 <= anon < 90:
+        bar = "✯"
+    elif 90 <= anon < 92:
+        bar = "✷"
+    elif 92 <= anon < 94:
+        bar = "✪"
+    elif 94 <= anon < 95:
+        bar = "☆"
+    elif 95 <= anon < 96:
+        bar = "✯"
+    elif 96 <= anon < 97:
+        bar = "☆"
     else:
-        bar = "—————————◉"
+        bar = "✷"
 
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{bar}",
+                text=f"{played} {bar} {dur}",
                 callback_data="GetTimer",
             )
         ],
@@ -73,31 +101,58 @@ def telegram_markup_timer(_, chat_id, played, dur):
     duration_sec = time_to_seconds(dur)
     percentage = (played_sec / duration_sec) * 100
     anon = math.floor(percentage)
-    if 0 < anon <= 10:
-        bar = "◉—————————"
-    elif 10 < anon < 20:
-        bar = "—◉————————"
-    elif 20 <= anon < 30:
-        bar = "——◉———————"
-    elif 30 <= anon < 40:
-        bar = "———◉——————"
-    elif 40 <= anon < 50:
-        bar = "————◉—————"
-    elif 50 <= anon < 60:
-        bar = "—————◉————"
-    elif 60 <= anon < 70:
-        bar = "——————◉———"
-    elif 70 <= anon < 80:
-        bar = "———————◉——"
-    elif 80 <= anon < 95:
-        bar = "————————◉—"
+    ar = "✯"
+    elif 5 < anon < 10:
+        bar = "☆"
+    elif 10 <= anon < 15:
+        bar = "✷"
+    elif 15 <= anon < 20:
+        bar = "✪"
+    elif 20 <= anon < 25:
+        bar = "✯"
+    elif 25 <= anon < 30:
+        bar = "☆"
+    elif 30 <= anon < 35:
+        bar = "✯"
+    elif 35 <= anon < 40:
+        bar = "✷"
+    elif 40 <= anon < 45:
+        bar = "✪"
+    elif 45 < anon < 50:
+        bar = "✯"
+    elif 50 <= anon < 55:
+        bar = "✷"
+    elif 55 <= anon < 60:
+        bar = "✪"
+    elif 60 <= anon < 65:
+        bar = "☆"
+    elif 65 <= anon < 70:
+        bar = "✯"
+    elif 70 <= anon < 75:
+        bar = "✷"
+    elif 75 <= anon < 80:
+        bar = "✪"
+    elif 80 <= anon < 85:
+        bar = "☆"
+    elif 85 <= anon < 90:
+        bar = "✯"
+    elif 90 <= anon < 92:
+        bar = "✷"
+    elif 92 <= anon < 94:
+        bar = "✪"
+    elif 94 <= anon < 95:
+        bar = "☆"
+    elif 95 <= anon < 96:
+        bar = "✯"
+    elif 96 <= anon < 97:
+        bar = "☆"
     else:
-        bar = "—————————◉"
+        bar = "✷"
 
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{bar}",
+                text=f"{played} {bar} {dur}",
                 callback_data="GetTimer",
             )
         ],
