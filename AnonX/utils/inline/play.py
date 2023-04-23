@@ -20,7 +20,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     elif 10 <= anon < 15:
         bar = "✷"
     elif 15 <= anon < 20:
-        bar = "✪"
+        bar = "✰"
     elif 20 <= anon < 25:
         bar = "✯"
     elif 25 <= anon < 30:
@@ -36,7 +36,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     elif 50 <= anon < 55:
         bar = "✷"
     elif 55 <= anon < 60:
-        bar = "✪"
+        bar = "✰"
     elif 60 <= anon < 65:
         bar = "☆"
     elif 65 <= anon < 70:
@@ -44,7 +44,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     elif 70 <= anon < 75:
         bar = "✷"
     elif 75 <= anon < 80:
-        bar = "✪"
+        bar = "✰"
     elif 80 <= anon < 85:
         bar = "☆"
     elif 85 <= anon < 90:
@@ -52,7 +52,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     elif 90 <= anon < 92:
         bar = "✷"
     elif 92 <= anon < 94:
-        bar = "✪"
+        bar = "✰"
     elif 94 <= anon < 95:
         bar = "☆"
     elif 95 <= anon < 96:
@@ -79,13 +79,15 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
             InlineKeyboardButton(
                 text=f"{bar}", callback_data=f"ADMIN Skip|{chat_id}"
             ),
+        ],
+        [
             InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"ADMIN Stop|{chat_id}"
+                text=f"✯𝙴𝙽𝙳✯", callback_data=f"ADMIN Stop|{chat_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
+                text="✯𝙲𝙻𝙾𝚂𝙴✯", callback_data=f"close"
             )
         ],
     ]
@@ -104,7 +106,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
     elif 10 <= anon < 15:
         bar = "✷"
     elif 15 <= anon < 20:
-        bar = "✪"
+        bar = "✰"
     elif 20 <= anon < 25:
         bar = "✯"
     elif 25 <= anon < 30:
@@ -120,7 +122,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
     elif 50 <= anon < 55:
         bar = "✷"
     elif 55 <= anon < 60:
-        bar = "✪"
+        bar = "✰"
     elif 60 <= anon < 65:
         bar = "☆"
     elif 65 <= anon < 70:
@@ -128,7 +130,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
     elif 70 <= anon < 75:
         bar = "✷"
     elif 75 <= anon < 80:
-        bar = "✪"
+        bar = "✰"
     elif 80 <= anon < 85:
         bar = "☆"
     elif 85 <= anon < 90:
@@ -136,7 +138,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
     elif 90 <= anon < 92:
         bar = "✷"
     elif 92 <= anon < 94:
-        bar = "✪"
+        bar = "✰"
     elif 94 <= anon < 95:
         bar = "☆"
     elif 95 <= anon < 96:
@@ -146,8 +148,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
     else:
         bar = "✷"
 
-    buttons = [
-        [
+    
             InlineKeyboardButton(
                 text=f"{bar}",
                 callback_data=f"ADMIN Resume|{chat_id}",
@@ -163,13 +164,15 @@ def telegram_markup_timer(_, chat_id, played, dur):
             InlineKeyboardButton(
                 text=f"{bar}", callback_data=f"ADMIN Skip|{chat_id}"
             ),
+        ],
+        [
             InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"ADMIN Stop|{chat_id}"
+                text=f"✯𝙴𝙽𝙳✯", callback_data=f"ADMIN Stop|{chat_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
+                text="✯𝙲𝙻𝙾𝚂𝙴✯", callback_data=f"close"
             )
         ],
     ]
