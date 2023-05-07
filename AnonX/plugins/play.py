@@ -499,8 +499,8 @@ async def play_commnd(
                     "f" if fplay else "d",
                 )
                 await mystic.delete()
-                await message.reply_photo(
-                    photo=details["thumb"],
+                await message.reply_video(
+                    video=f"https://telegra.ph/file/de9592a41ad366605f2e2.mp4",
                     caption=_["play_11"].format(
                         details["title"].title(),
                         details["duration_min"],
@@ -519,8 +519,8 @@ async def play_commnd(
                     "f" if fplay else "d",
                 )
                 await mystic.delete()
-                await message.reply_photo(
-                    photo=img,
+                await message.reply_video(
+                    video= f"https://telegra.ph/file/de9592a41ad366605f2e2.mp4",
                     caption=cap,
                     reply_markup=InlineKeyboardMarkup(buttons),
                 )
