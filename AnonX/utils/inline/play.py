@@ -132,8 +132,8 @@ def telegram_markup_timer(_, chat_id, played, dur):
     else:
         bar = "✷"
         
-buttons = [ 
-    [
+buttons = [
+        [
             InlineKeyboardButton(
                 text="𝘀ҡเp", callback_data=f"ADMIN Skip|{chat_id}"
             ),
