@@ -142,7 +142,7 @@ buttons = [
             ),
             InlineKeyboardButton(
                 text="𝗰ℓσѕε", callback_data=f"close"
-            )
+            ),
         ],
     ]
     return buttons
@@ -158,7 +158,7 @@ def stream_markup(_, videoid, chat_id):
             ),
             InlineKeyboardButton(
                 text="𝗰ℓσѕε", callback_data=f"close"
-            )
+            ),
         ],
     ]
     return buttons
@@ -175,7 +175,7 @@ def telegram_markup(_, chat_id):
             ),
             InlineKeyboardButton(
                 text="𝗰ℓσѕε", callback_data=f"close"
-            )
+            ),
         ],
     ]
     return buttons
