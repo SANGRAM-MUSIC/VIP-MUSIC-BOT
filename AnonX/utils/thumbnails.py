@@ -12,7 +12,8 @@ from youtubesearchpython.__future__ import VideosSearch
 from config import YOUTUBE_IMG_URL
 from AnonX import app
 
-
+VIDEO = f"https://telegra.ph/file/de9592a41ad366605f2e2.mp4"
+    
 def changeImageSize(maxWidth, maxHeight, image):
     widthRatio = maxWidth / image.size[0]
     heightRatio = maxHeight / image.size[1]
@@ -168,7 +169,7 @@ async def gen_thumb(videoid, user_id):
         return f"cache/{videoid}_{user_id}.png"
     except Exception as e:
         print(e)
-        return YOUTUBE_IMG_URL
+        return VIDEO
 
 
 async def gen_qthumb(videoid, user_id):
@@ -310,4 +311,4 @@ async def gen_qthumb(videoid, user_id):
         return f"cache/que{videoid}_{user_id}.png"
     except Exception as e:
         print(e)
-        return YOUTUBE_IMG_URL
+        return VIDEO
