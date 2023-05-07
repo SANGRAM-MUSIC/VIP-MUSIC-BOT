@@ -65,76 +65,6 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-        ],
-        
-        [
-            InlineKeyboardButton(
                 text="𝘀ҡเp", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
@@ -201,78 +131,24 @@ def telegram_markup_timer(_, chat_id, played, dur):
         bar = "☆"
     else:
         bar = "✷"
+buttons = [
+        [
+            InlineKeyboardButton(
+                text="𝘀ҡเp", callback_data=f"ADMIN Skip|{chat_id}"
+            ),
+            InlineKeyboardButton(
+                text="𝘀τσρ", callback_data=f"ADMIN Stop|{chat_id}"
+            ),
+            InlineKeyboardButton(
+                text="𝗰ℓσѕε", callback_data=f"close"
+            )
+        ],
+    ]
+return buttons
 
+
+def stream_markup(_, videoid, chat_id):
     buttons = [
-        [
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text=f"{bar}", callback_data=f"add_playlist {videoid}"
-            ),
-        ],
-        
         [
             InlineKeyboardButton(
                 text="𝘀ҡเp", callback_data=f"ADMIN Skip|{chat_id}"
@@ -288,55 +164,17 @@ def telegram_markup_timer(_, chat_id, played, dur):
     return buttons
 
 
-def stream_markup(_, videoid, chat_id):
-    buttons = [
-        [
-            InlineKeyboardButton(
-                text="▷",
-                callback_data=f"ADMIN Resume|{chat_id}",
-            ),
-            InlineKeyboardButton(
-                text="II", callback_data=f"ADMIN Pause|{chat_id}"
-            ),
-            InlineKeyboardButton(
-                text="☆", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
-            ),
-            InlineKeyboardButton(
-                text="▢", callback_data=f"ADMIN Stop|{chat_id}"
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
-            )
-        ],
-    ]
-    return buttons
-
-
 def telegram_markup(_, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="▷",
-                callback_data=f"ADMIN Resume|{chat_id}",
+                text="𝘀ҡเp", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="II", callback_data=f"ADMIN Pause|{chat_id}"
+                text="𝘀τσρ", callback_data=f"ADMIN Stop|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
-            ),
-            InlineKeyboardButton(
-                text="▢", callback_data=f"ADMIN Stop|{chat_id}"
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
+                text="𝗰ℓσѕε", callback_data=f"close"
             )
         ],
     ]
@@ -473,25 +311,13 @@ def queue_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="▷",
-                callback_data=f"ADMIN Resume|{chat_id}",
+                text="𝘀ҡเp", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="II", callback_data=f"ADMIN Pause|{chat_id}"
+                text="𝘀τσρ", callback_data=f"ADMIN Stop|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="☆", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
-            ),
-            InlineKeyboardButton(
-                text="▢", callback_data=f"ADMIN Stop|{chat_id}"
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
+                text="𝗰ℓσѕε", callback_data=f"close"
             )
         ],
     ]
