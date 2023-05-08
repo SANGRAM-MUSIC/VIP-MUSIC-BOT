@@ -170,7 +170,7 @@ async def gen_thumb(videoid, user_id):
         return f"cache/{videoid}_{user_id}.png"
     except Exception as e:
         print(e)
-        return YOUTUBE_IMG_URL
+        return random.choice(YOUTUBE_IMG_URL)
 
 
 async def gen_qthumb(videoid, user_id):
@@ -313,4 +313,4 @@ async def gen_qthumb(videoid, user_id):
         return f"cache/que{videoid}_{user_id}.png"
     except Exception as e:
         print(e)
-        return YOUTUBE_IMG_URL
+        return random.choice(YOUTUBE_IMG_URL)
