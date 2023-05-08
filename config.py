@@ -159,13 +159,13 @@ autoclean = []
 
 
 # Images
-START_IMG_URL = getenv("START_IMG_URL", None)
+START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/58784c426a8724e38e864.jpg")
 
 PING_IMG_URL = getenv(
 
     "PING_IMG_URL",
 
-    "assets/Ping.jpeg",
+    "https://te.legra.ph/file/58784c426a8724e38e864.jpg",
 
 )
 
@@ -181,7 +181,7 @@ GLOBAL_IMG_URL = getenv(
 
     "GLOBAL_IMG_URL",
 
-    "assets/Global.jpeg",
+    "https://te.legra.ph/file/58784c426a8724e38e864.jpg",
 
 )
 
@@ -189,7 +189,7 @@ STATS_IMG_URL = getenv(
 
     "STATS_IMG_URL",
 
-    "assets/Stats.jpeg",
+    "https://te.legra.ph/file/58784c426a8724e38e864.jpg",
 
 )
 
@@ -237,7 +237,7 @@ SPOTIFY_ARTIST_IMG_URL = getenv(
 
     "SPOTIFY_ARTIST_IMG_URL",
 
-    "assets/SpotifyArtist.jpeg",
+    "assets/SpotifyPlaylist.jpeg",
 
 )
 
@@ -245,7 +245,7 @@ SPOTIFY_ALBUM_IMG_URL = getenv(
 
     "SPOTIFY_ALBUM_IMG_URL",
 
-    "assets/SpotifyAlbum.jpeg",
+    "assets/SpotifyPlaylist.jpeg",
 
 )
 
