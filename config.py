@@ -173,7 +173,7 @@ PLAYLIST_IMG_URL = getenv(
 
     "PLAYLIST_IMG_URL",
 
-    "assets/Playlist.jpeg",
+    "https://te.legra.ph/file/71a2487183bfbd63019a6.jpg",
 
 )
 
@@ -197,7 +197,7 @@ TELEGRAM_AUDIO_URL = getenv(
 
     "TELEGRAM_AUDIO_URL",
 
-    "assets/Audio.jpeg",
+    "https://te.legra.ph/file/2a1215a6ebdc30dbc8a92.jpg",
 
 )
 
@@ -205,7 +205,7 @@ TELEGRAM_VIDEO_URL = getenv(
 
     "TELEGRAM_VIDEO_URL",
 
-    "assets/Video.jpeg",
+    "https://te.legra.ph/file/e004b2876d0ecd351b3f9.jpg",
 
 )
 
@@ -213,7 +213,7 @@ STREAM_IMG_URL = getenv(
 
     "STREAM_IMG_URL",
 
-    "assets/Stream.jpeg",
+    "https://te.legra.ph/file/71a2487183bfbd63019a6.jpg",
 
 )
 
@@ -221,7 +221,7 @@ SOUNCLOUD_IMG_URL = getenv(
 
     "SOUNCLOUD_IMG_URL",
 
-    "assets/Soundcloud.jpeg",
+    "https://te.legra.ph/file/a667c504b964b5745e37b.jpg",
 
 )
 
@@ -229,7 +229,7 @@ YOUTUBE_IMG_URL = getenv(
 
     "YOUTUBE_IMG_URL",
 
-    "assets/Youtube.jpeg",
+    "https://te.legra.ph/file/9bd2e4063d9827b6ccf77.jpg",
 
 )
 
@@ -237,7 +237,7 @@ SPOTIFY_ARTIST_IMG_URL = getenv(
 
     "SPOTIFY_ARTIST_IMG_URL",
 
-    "assets/SpotifyPlaylist.jpeg",
+    "https://te.legra.ph/file/449457d248ed9f3086658.jpg",
 
 )
 
@@ -245,7 +245,7 @@ SPOTIFY_ALBUM_IMG_URL = getenv(
 
     "SPOTIFY_ALBUM_IMG_URL",
 
-    "assets/SpotifyPlaylist.jpeg",
+    "https://te.legra.ph/file/449457d248ed9f3086658.jpg",
 
 )
 
@@ -253,7 +253,7 @@ SPOTIFY_PLAYLIST_IMG_URL = getenv(
 
     "SPOTIFY_PLAYLIST_IMG_URL",
 
-    "assets/SpotifyPlaylist.jpeg",
+    "https://te.legra.ph/file/449457d248ed9f3086658.jpg",
 
 )
 
