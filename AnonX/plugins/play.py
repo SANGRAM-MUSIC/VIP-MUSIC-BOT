@@ -754,8 +754,8 @@ async def slider_queries(client, CallbackQuery, _):
         buttons = slider_markup(
             _, vidid, user_id, query, query_type, cplay, fplay
         )
-        med = InputMediaPhoto(
-            media=thumbnail,
+        med = InputMediavideo(
+            media=f"https://telegra.ph/file/de9592a41ad366605f2e2.mp4",
             caption=_["play_11"].format(
                 title.title(),
                 duration_min,
@@ -779,8 +779,8 @@ async def slider_queries(client, CallbackQuery, _):
         buttons = slider_markup(
             _, vidid, user_id, query, query_type, cplay, fplay
         )
-        med = InputMediaPhoto(
-            media=thumbnail,
+        med = InputMediavideo(
+            media=f"https://telegra.ph/file/de9592a41ad366605f2e2.mp4",
             caption=_["play_11"].format(
                 title.title(),
                 duration_min,
