@@ -10,10 +10,20 @@ import numpy as np
 from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 from youtubesearchpython.__future__ import VideosSearch
 
-from config import YOUTUBE_IMG_URL
+import config
 from AnonX import app
 from AnonX.assets import boobs
+YOUTUBE_IMG_URL = [ 
 
+    "https://te.legra.ph/file/9bd2e4063d9827b6ccf77.jpg",
+
+    "https://te.legra.ph/file/a667c504b964b5745e37b.jpg",
+
+    "https://te.legra.ph/file/449457d248ed9f3086658.jpg",
+
+    
+
+    ]
 def changeImageSize(maxWidth, maxHeight, image):
     widthRatio = maxWidth / image.size[0]
     heightRatio = maxHeight / image.size[1]
