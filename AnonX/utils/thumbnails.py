@@ -16,10 +16,12 @@ from AnonX.assets import boobs
 YOUTUBE_IMG_URL = [ 
 
     "https://te.legra.ph/file/9bd2e4063d9827b6ccf77.jpg",
-
+    "https://te.legra.ph/file/693469f77e9093040b9dc.jpg,
     "https://te.legra.ph/file/a667c504b964b5745e37b.jpg",
-
+    "https://te.legra.ph/file/7601b1a7949e2a1468937.jpg",
     "https://te.legra.ph/file/449457d248ed9f3086658.jpg",
+    "https://te.legra.ph/file/6d1b59a2196ddba142d97.jpg",
+    
 
     
 
