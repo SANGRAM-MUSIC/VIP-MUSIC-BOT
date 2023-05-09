@@ -207,19 +207,68 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         bar = "ﮩ٨ـﮩﮩ٨ـ♡ﮩ٨ـﮩﮩ٨ـ"
     else:
         bar = "ﮩ٨ـﮩ♡ﮩ٨ـﮩ٨ـﮩﮩ٨ـ"
-    buttons = [
+    buttons  = [
+
         [
+
             InlineKeyboardButton(
+
+                text="▷",
+
+                callback_data=f"ADMIN Resume|{chat_id}",
+
+            ),
+
+            InlineKeyboardButton(
+
+                text="II", callback_data=f"ADMIN Pause|{chat_id}"
+
+            ),
+
+            InlineKeyboardButton(
+
                 text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
+
             ),
+
             InlineKeyboardButton(
-                text="ᴄʟᴏsᴇ", callback_data=f"close",
-            ),
-            InlineKeyboardButton(
+
                 text="▢", callback_data=f"ADMIN Stop|{chat_id}"
+
             ),
+
         ],
+
+        [
+
+            InlineKeyboardButton(
+
+                text="⏮ 10 sᴇᴄ",
+
+                callback_data=f"ADMIN 1|{chat_id}",
+
+            ),
+
+            
+
+            InlineKeyboardButton(
+
+                text="ᴄʟᴏsᴇ", callback_data=f"close",
+
+            ),
+
+            InlineKeyboardButton(
+
+                text="⏭ 10 sᴇᴄᴏ",
+
+                callback_data=f"ADMIN 2|{chat_id}",
+
+            ),
+
+        ],
+
     ]
+
     return buttons
 
 
